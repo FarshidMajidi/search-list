@@ -8,7 +8,7 @@ export const Card = (props: { title: string, img: any, link: string }) => {
         <div className='container-card'>
             <div className='wrapper-image'>
                 <a href={link} target="_blank">
-                    <img src={img !== undefined ? img : defaultImg}/>
+                    <img src={img !== undefined ? img : defaultImg} alt="images"/>
                 </a>
             </div>
             <div className='footer-card'>

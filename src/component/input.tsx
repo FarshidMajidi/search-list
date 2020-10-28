@@ -14,12 +14,14 @@ export const Input = (props: IInputProps) => {
     const {name, value, type, icon, placeholder, onChange} = props;
     return (
         <div className="input-container">
-            <img src={icon}/>
-            <input type={type}
-                   name={name}
-                   value={value}
-                   placeholder={placeholder}
-                   onChange={onChange}
+            <img src={icon} alt="search icon"/>
+            <input
+                aria-label={name}
+                type={type}
+                name={name}
+                value={value}
+                placeholder={placeholder}
+                onChange={onChange}
             />
         </div>
     );
